@@ -1,0 +1,10 @@
+1. Pitanje: što radi linija koda client_socket.connect((host,port))?
+
+connect je funkcija koja spaja u ovom slucaju klijenta (socket.socket()) na određenu adresu i port.
+
+2. Pitanje: U serverskom dijelu vašeg programa, što znači drugi broj u 
+zagradama kod ispisa „Got connection…“?
+
+Metoda accept je serverska metoda koja se koristi za prihvaćanje konekcije. Vraća dva parametra (conn, addr) 
+conn - novi socket objekt koji može biti iskorišten za slanje i primanje podataka na toj konekciji
+addr - adresa koja je bindana na socket na drugom kraju konekcije
